@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  div
+    table
+      thead
+        tr 
+          th Person ID
+          th Person Name
+      tbody
+        each person, i in people
+          tr
+           td= person.name
+           td 
+              
+
